@@ -21,6 +21,11 @@
 
 
 module uart_loopback_top(
-
+    input  logic clk,
+    input  logic rst_n,
+    input  logic uart_rx_pin,
+    output logic uart_tx_pin
     );
+
+    
 endmodule
