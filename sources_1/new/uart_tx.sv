@@ -69,7 +69,7 @@ module uart_tx(
 
         case (state_reg)
             IDLE: begin
-                if (tx_start == 1'b1) begin
+                if (data_valid == 1'b1) begin
                     state_next     = START;
                     counter16_next = 4'b0;
                     shift_next     = data_in;
